@@ -25,6 +25,9 @@
         main {
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
         }
 
         .visualization {
@@ -38,6 +41,11 @@
 <body>
     <h1>qlik-embed demo</h1>
     <main>
+        <div class="visualization">
+            <qlik-embed ui="analytics/chart" app-id="35e38b87-bc9f-4ed4-9d9d-501d5652310f"
+                object-id="BQTm"></qlik-embed>
+        </div>
+
         <div class="visualization">
             <qlik-embed ui="analytics/chart" app-id="35e38b87-bc9f-4ed4-9d9d-501d5652310f"
                 object-id="BQTm"></qlik-embed>
