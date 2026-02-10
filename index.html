@@ -19,14 +19,24 @@
             background-color: #f0f0f0;
             margin: 0;
             padding: 20px;
+            height: 100vh;
+            width: 100vw;
         }
 
         h1 {
             color: #333;
         }
 
-        p {
-            color: #666;
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        embed {
+            display: block;
+            margin-top: 20px;
+            width: 80%;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -38,6 +48,7 @@
         ui="analytics/chart"
         app-id="35e38b87-bc9f-4ed4-9d9d-501d5652310f"
         object-id="BQTm"
+        class="embed"
         ></qlik-embed>
     </main>
 
