@@ -1,15 +1,15 @@
 <html>
 
 <head>
-    <title>My Web Page</title>
+    <title>qlik-embed demo</title>
 
         <script
     crossorigin="anonymous"
     type="application/javascript"
     src="https://cdn.jsdelivr.net/npm/@qlik/embed-web-components@1/dist/index.min.js"
-    data-host="<QLIK_TENANT_URL>"
-    data-client-id="<QLIK_OAUTH2_CLIENT_ID>"
-    data-redirect-uri="<WEB_APP_CALLBACK_URI>"
+    data-host="https://qontrolbi.eu.qlikcloud.com/"
+    data-client-id="019c4746c8c3c10ca026daceaab5f26e"
+    data-redirect-uri="https://albinkempe.github.io/qlik/callback/"
     data-access-token-storage="session"
     ></script>
 
@@ -32,7 +32,18 @@
 </head>
 
 <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a simple web page created as an example.</p>
+    <h1>qlik-embed demo</h1>
+    <main>
+        <qlik-embed
+        ui="analytics/chart"
+        app-id="35e38b87-bc9f-4ed4-9d9d-501d5652310f"
+        object-id="BQTm"
+        ></qlik-embed>
+    </main>
+
+
+    
+
+
 </body>
 </html>
